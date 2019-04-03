@@ -25,7 +25,7 @@ public class Find_First_Last_Position {
 
 	public static void main(String[] args) {
 		int arr[] = {5,7,7,8,8,10 };
-		int target = 6;
+		int target = 5;
 		int output[] = findPosition(arr, target);
 		System.out.println(Arrays.toString(output));
 	}

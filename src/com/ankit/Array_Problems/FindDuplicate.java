@@ -1,5 +1,7 @@
 package com.ankit.Array_Problems;
 
+//Find duplicate in array of 1...n
+
 public class FindDuplicate {
 
 	public static void main(String[] args) {
