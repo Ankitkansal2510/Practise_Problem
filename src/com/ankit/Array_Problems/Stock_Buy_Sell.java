@@ -12,14 +12,14 @@ package com.ankit.Array_Problems;
  *Example 2:
  *Input: [7,6,4,3,1]
  *Output: 0
- *Explanation: In this case, no transaction is done, i.e. max profit = 0. 
- * **/
+ *Explanation: In this case, no transaction is done, i.e. max profit = 0.
+ **/
 public class Stock_Buy_Sell {
 	public static void main(String[] args) {
 		int arr[]={100, 180, 260, 310, 40, 535, 695};
 		findbest(arr);
 	}
-	private static void findbest(int[] arr) {
+	/*private static void findbest(int[] arr) {
 		int maxProfit = 0;
         int minValue = Integer.MAX_VALUE;
         for(int i: arr){
@@ -29,5 +29,19 @@ public class Stock_Buy_Sell {
             maxProfit = Math.max(maxProfit, i-minValue);
         }
         System.out.println(maxProfit);
+}*/
+	
+	private static void findbest(int[] arr) {
+		int minValue=arr[0];
+		int maxValue=arr[0];
+		for(int i=0;i<arr.length-1;i++)
+		{
+			minValue=Math.min(minValue ,arr[i+1]);
+		}
+		for(int i=0;i<arr.length-1;i++)
+		{
+			maxValue=Math.max(maxValue,arr[i+1]);
+		}
+        System.out.println(maxValue-minValue);
 }
 }

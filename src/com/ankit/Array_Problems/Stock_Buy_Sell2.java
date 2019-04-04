@@ -14,24 +14,26 @@ package com.ankit.Array_Problems;
 public class Stock_Buy_Sell2 {
 
 	public static void main(String[] args) {
-		int arr[]={7,1,5,3,6,4};
+		int arr[] = { 7, 1, 5, 3, 6, 4 };
 		findbest(arr);
 	}
+
 	private static void findbest(int[] prices) {
-		 int i = 0;
-	        int valley = prices[0];
-	        int peak = prices[0];
-	        int maxprofit = 0;
-	        while (i < prices.length - 1) {
-	            while (i < prices.length - 1 && prices[i] >= prices[i + 1])
-	                i++;
-	            valley = prices[i];
-	            while (i < prices.length - 1 && prices[i] <= prices[i + 1])
-	                i++;
-	            peak = prices[i];
-	            maxprofit += peak - valley;
-	        }
+		
+		int i = 0;
+		int valley = prices[0];
+		int peak = prices[0];
+		int maxprofit = 0;
+		while (i < prices.length - 1) {
+			while (i < prices.length - 1 && prices[i] >= prices[i + 1])
+				i++;
+			valley = prices[i];
+			while (i < prices.length - 1 && prices[i] <= prices[i + 1])
+				i++;
+			peak = prices[i];
+			maxprofit += peak - valley;
+		}
 		System.out.println(maxprofit);
-     
-}
+
+	}
 }
