@@ -322,6 +322,8 @@ public class MergeTwoList {
 		list.insert(1);
 		list.insert(2);
 		list.insert(4);
+		list.insert(5);
+		list.insert(6);
 		// list.display();
 		/*
 		 * list.insertAtFirstPosition(0); //list.display();
@@ -329,24 +331,27 @@ public class MergeTwoList {
 		 * list.insertAtMiddle(3); //list.display(); list.insertAtMiddle(7);
 		 */
 		list.display();
+		list.insertNodeAfterNthNodefromEnd(10, 2);
+		System.out.println();list.display();
+		
 		/*
 		 * list.deleteNode(2);; list.display();
 		 */
 		System.out.println();
-
+/*
 		list1.insert(1);
 		list1.insert(2);
 		list1.insert(3);
 		list1.insert(2);
-		list1.insert(1);
+		list1.insert(1);*/
 		/*list1.insert(3);
-		list1.insert(4);*/
-		/**list1.insert(4);*/
+		list1.insert(4);
+		*//**list1.insert(4);*//*
 		// list1.insert(5);
 		list1.display();
 		
-		/*list1.reverseLinkedList(list1.head);
-		list1.display();*/
+		list1.reverseLinkedList(list1.head);
+		list1.display();
 		boolean result=list1.palindrom();
 		if(result==true)
 		{
@@ -364,39 +369,39 @@ public class MergeTwoList {
 		// list1.display();
 		// Node node= mergeTwoSortedList(list.head,list1.head);
 
-		/*list1.RemoveDuplicateFromSortedList();
-		list1.display();*/
-		/**
+		list1.RemoveDuplicateFromSortedList();
+		list1.display();
+		*//**
 		 * list1.insertAtFirstPosition(5); //list1.display();
 		 * list1.insertAtlastPostition(50); //list1.display();
 		 * list1.insertNodeAfterNthNodefromEnd(45, 4);
-		 */
+		 *//*
 
 		// list1.display();
-		/*
+		
 		 * list1.insertAtMiddle(2); list1.display();
-		 */
-		/*
+		 
+		
 		 * list1.deleteGivenNode(list1.head.next.next.next); list1.display();
-		 */
-		/*
+		 
+		
 		 * list1.insertNodeAfterNthNodefromEnd(2, 3); list1.display();
-		 */
+		 
 
 		// list1.deleteNode(4); list1.display();
 
 		// list1.deleteNode(1); list1.display();
 
-		/*
+		
 		 * list1.deleteGivenNode(list1.head.next); list1.display();
-		 */
+		 
 
-		/*
+		
 		 * list1.deleteNode(list1.head.next); list1.display();
-		 */
+		 
 
 		// list1.deletatAGivenNode(head, head.next);
-		/*
+		
 		 * list1.head=list1.mergeTwoSortedList(list.head, list1.head);
 		 * list1.display();
 		 */
