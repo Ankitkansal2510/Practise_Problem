@@ -39,8 +39,8 @@ public class MergeOverlappingIntervals {
 
 		List<Interval> list = new ArrayList<Interval>();
 		list.add(new Interval(1, 3));
-		list.add(new Interval(2, 6));
-		list.add(new Interval(8, 10));
+		list.add(new Interval(8, 6));
+		list.add(new Interval(2, 10));
 		list.add(new Interval(15, 18));
 		LinkedList<Interval> listResult=mergeIntervals(list);
 		for(int i=0;i<listResult.size();i++){

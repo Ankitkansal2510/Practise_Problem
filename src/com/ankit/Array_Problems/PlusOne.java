@@ -36,7 +36,7 @@ public class PlusOne {
 	    return result;
 	}
 	public static void main(String[] args) {
-		int arr[]={4,9,9};
+		int arr[]={1,2,3};
 		int result[]=addOne(arr);
 		System.out.println(Arrays.toString(result));
 		
