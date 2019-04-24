@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Given a total and coins of certain denomination with infinite supply, what is
  * the minimum number of coins it takes to form this total.
  * 
- * if ww can find the minimum coin to form the total return -1
+ * if we cannot find the minimum coin to for a total retur -1
  *
  * Time complexity - O(coins.size * total) Space complexity - O(coins.size *
  * total)
@@ -18,8 +18,8 @@ public class MinimumCoinChange {
 
 	public static void main(String[] args) {
 
-		int arr[] = { 2 };
-		int n = 3;
+		int arr[] = { 1,5,6,8 };
+		int n = 11;
 
 		System.out.println("Total number of coins required to forma a total of : " + n + " is " + findMinimu(arr, n));
 	}
@@ -46,5 +46,4 @@ public class MinimumCoinChange {
 		}
 		return temp[arr.length][n] > n ? -1 : temp[arr.length][n];
 	}
-
 }

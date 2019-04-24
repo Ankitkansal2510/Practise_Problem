@@ -35,16 +35,6 @@ public class Sum_Of_Left_Leves_BT {
 	    sumOfLeft(root.right);  
    
 	}
-	
-	private static boolean isLeaf(node root) {
-		if(root==null)
-		{
-			return false;
-		}
-			if(root.left==null && root.right==null)
-				return true;
-		return false;
-	}
 
 	public static void main(String[] args) {
 		Sum_Of_Left_Leves_BT tree = new Sum_Of_Left_Leves_BT(); 
