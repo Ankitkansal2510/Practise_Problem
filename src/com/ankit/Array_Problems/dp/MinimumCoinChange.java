@@ -19,7 +19,7 @@ public class MinimumCoinChange {
 	public static void main(String[] args) {
 
 		int arr[] = { 1,5,6,8 };
-		int n = 11;
+		int n = 4;
 
 		System.out.println("Total number of coins required to forma a total of : " + n + " is " + findMinimu(arr, n));
 	}
